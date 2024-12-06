@@ -73,7 +73,6 @@ export function TaskBank({ tasks, onMoveTask, onUpdate, onDelete }: TaskBankProp
             task={task}
             index={index}
             source="available"
-            onMoveTask={onMoveTask}
             onUpdate={onUpdate}
             onDelete={onDelete}
           />
