@@ -9,7 +9,7 @@ interface DraggableTaskCardProps {
   task: Task;
   index: number;
   source: 'available' | 'today';
-  onMoveTask: (taskId: string, from: 'available' | 'today', to: 'available' | 'today', toIndex?: number) => void;
+  onMoveTask?: (taskId: string, from: 'available' | 'today', to: 'available' | 'today', toIndex?: number) => void;
   onToggle?: (id: string) => void;
   onUpdate: (id: string, title: string, description: string) => void;
   onDelete: (id: string) => void;
@@ -21,8 +21,6 @@ interface DraggableTaskCardProps {
 export function DraggableTaskCard({
   task,
   source,
-  onMoveTask,
-  onToggle,
   onUpdate,
   onDelete,
   onSetTimer,
